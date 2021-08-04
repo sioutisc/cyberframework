@@ -22,7 +22,7 @@ import rtyaml
 # and one that ends in .xlsx, save it to a temporary file.
 with tempfile.NamedTemporaryFile(suffix=".xlsx") as f:
 	#urllib.request.urlretrieve("https://www.nist.gov/document-3764", f.name)
-	fn = "/tmp/framework-for-improving-critical-infrastructure-cybersecurity-core.xlsx"
+	fn = "nist-csf.xlsx"
 	xlsx = openpyxl.load_workbook(fn) # f.name
 
 # Read the rows.
